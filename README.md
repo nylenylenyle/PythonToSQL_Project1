@@ -111,6 +111,12 @@ df.info()
 ```
 
 ```python
+# Later analysis would benefit from a column that calculates the dollar amount of each invoice/order
+df['total'] = df['unit_price'] * df['quantity']
+df.head()
+```
+
+```python
 # Save cleaned, analysis-ready dataset
 # This is more of a personal habit; I tend to keep various versions of my datasets 
 df.to_csv("Walmart_Cleaned_Data.csv",index=False)
@@ -130,6 +136,12 @@ try:
 except:
     print('no')
 ```
+
+```python
+#
+df.to_sql(name='walmart', con=engine_psql, if_exists='append', index=False)
+```
+
 ### 2. Set Up Kaggle API
    - **API Setup**: Obtain your Kaggle API token from [Kaggle](https://www.kaggle.com/) by navigating to your profile settings and downloading the JSON file.
    - **Configure Kaggle**: 
