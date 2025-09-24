@@ -28,12 +28,60 @@ The goal is to extract business insights from sales data. Python is used for dat
 > ###### Which five branches saw the largest percentage decline in sales?  
 
 
+## Sample Code
+### Python:
+```python
+# Convert unit_price to float
+# df['unit_price'].astype(float) does not work because of the '$'
+# Remove '$', then convert to float
+df['unit_price'].str.replace('$', '').astype(float)
 
+# Replace data with '$' with new float values
+df['unit_price'] = df['unit_price'].str.replace('$', '').astype(float)
+df.info()
+```
+```sql
+-- Q.10 Which five branches saw the largest percentage decline in sales?
+WITH 
+revenue_2023
+AS
+	(
+	SELECT
+		branch,
+		SUM(total) AS revenue
+	FROM walmart
+	WHERE EXTRACT(YEAR FROM TO_DATE(date, 'YYYY-MM-DD')) = 2023
+	GROUP BY 1
+	)
+,
+revenue_2022
+AS
+	(
+	SELECT
+		branch,
+		SUM(total) AS revenue
+	FROM walmart
+	WHERE EXTRACT(YEAR FROM TO_DATE(date, 'YYYY-MM-DD')) = 2022
+	GROUP BY 1
+	)
+SELECT 
+	ls.branch,
+	ls.revenue AS revenue_last_year,
+	cs.revenue AS revenue_this_year,
+	ROUND((((cs.revenue - ls.revenue) / ls.revenue)*100)::NUMERIC,2) AS revenue_delta_perc
+FROM revenue_2022 AS ls
+JOIN revenue_2023 AS cs
+ON ls.branch = cs.branch
+ORDER BY 4 ASC 
+LIMIT 5
+;
+-- I used CTEs to separate 2022 and 2023 records grouped by branch
+-- Then I joined the two tables on branch
+-- The new table includes a calculated column showing percent change in revenue
+-- Sorting by revenue delta and limiting to 5 records produces the 5 companies that experienced the largest sales decline
 
+```
 
-EXAMPLES OF CODE:
-PYTHON
-SQL
 
 ---
 
