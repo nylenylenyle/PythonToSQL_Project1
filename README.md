@@ -62,6 +62,7 @@ df.duplicated().sum()
 ```
 
 ```python
+# OBSERVATIONS:
 # City and Branch are unnecessarily capitalized
 # unit_price should be float
 # quantity and unit_price are both missing 31 records
