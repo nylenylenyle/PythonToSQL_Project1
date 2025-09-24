@@ -7,25 +7,26 @@ The goal is to extract business insights from sales data. Python is used for dat
 
 ### Analysis will aim to address the following:
 
-> How many orders and items were sold by each payment method?  
+> ###### How many orders and items were sold by each payment method?  
 
-> Which categories received the highest ratings at each store?  
+> ###### Which categories received the highest ratings at each store?  
 
-> What are the busiest days of the week at each branch?  
+> ###### What are the busiest days of the week at each branch?  
 
-> How many items were sold by different payment methods?  
+> ###### How many items were sold by different payment methods?  
 
-> What are the average, minimum, and maximum ratings of each category in each city?  
+> ###### What are the average, minimum, and maximum ratings of each category in each city?  
 
-> What are the total profits (not revenue) for each category?  
+> ###### What are the total profits (not revenue) for each category?  
 
-> What is the most common payment method at each branch?  
+> ###### What is the most common payment method at each branch?  
 
-> How many sales were made in the morning, afternoon, and evening?  
+> ###### How many sales were made in the morning, afternoon, and evening?  
 
-> How many sales were made in the morning, afternoon, and evening at each store?  
+> ###### How many sales were made in the morning, afternoon, and evening at each store?  
 
-> Which five branches saw the largest percentage decline in sales?  
+> ###### Which five branches saw the largest percentage decline in sales?  
+
 
 
 
