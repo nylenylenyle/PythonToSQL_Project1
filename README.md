@@ -40,6 +40,7 @@ df['unit_price'].str.replace('$', '').astype(float)
 df['unit_price'] = df['unit_price'].str.replace('$', '').astype(float)
 df.info()
 ```
+### SQL
 ```sql
 -- Q.10 Which five branches saw the largest percentage decline in sales?
 WITH 
