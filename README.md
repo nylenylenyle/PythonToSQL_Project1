@@ -155,6 +155,16 @@ GROUP BY payment_method
 ;
 ```
 
+**Q1. How many orders were placed and items sold using each payment method?**
+
+```sql
+SELECT payment_method,
+       COUNT(*) AS order_count,
+       SUM(quantity) AS qty_sold
+FROM walmart
+GROUP BY payment_method;
+```
+
 
 
 
