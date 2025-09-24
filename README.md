@@ -27,7 +27,8 @@ import seaborn as sns
 # Database connectors
 import psycopg2
 from sqlalchemy import create_engine
-
+```
+```python
 # This creates a hidden holder in home directory
 # Necessary for connecting to Kaggle's API
 !mkdir ~/.kaggle
