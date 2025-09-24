@@ -92,6 +92,16 @@ LIMIT 5
 - **Other**: Kaggle API, SQLAlchemy, ipython-sql, psycopg2  
 - **Environment**: Jupyter Notebook, DBeaver  
 
+
+## Requirements
+
+- **Python 3.8+**
+- **SQL Databases**: MySQL, PostgreSQL
+- **Python Libraries**:
+  - `pandas`, `numpy`, `sqlalchemy`, `mysql-connector-python`, `psycopg2`
+- **Kaggle API Key** (for data downloading)
+
+
 ---
 
 ## Project Structure
