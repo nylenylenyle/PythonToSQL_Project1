@@ -10,9 +10,8 @@ Our goal is to extract critical business insights from Walmart sales data. We wi
 
 ## Project Steps
 
-### 1. Installing Libraries and Configuring Kaggle API (Python)
-   - **Tools Used**: Python, PostgreSQL, DBeaver
-   - **Goal**: Create a structured workspace within VS Code and organize project folders for smooth development and data handling.
+### Installing Libraries and Configuring Kaggle API (Python)
+
 
 ```python
 # Common libraries
