@@ -21,6 +21,7 @@ Q.7	What is the most common payment method at each branch?
 
 Q.8	How many sales were made in the morning, afternoon, and evening?
 
+
 Q.9	Which five branches saw the largest percentage decline in sales?
 
 
