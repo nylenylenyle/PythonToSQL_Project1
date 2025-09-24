@@ -85,22 +85,11 @@ LIMIT 5
 
 ## Results and Insights
 
-### Sales Insights
-- **Preferred payment methods**: Credit cards accounted for the highest order volume and items sold, followed by e-wallets and cash. This highlights a strong reliance on digital transactions in Walmart’s sales mix.  
-- **Branch-level differences**: Certain branches consistently outperformed others in total revenue, with clear disparities in customer purchasing behavior by location.  
-- **Category popularity**: Categories such as *Food & Beverages* and *Health & Beauty* ranked highest in customer ratings at multiple branches, suggesting strong consumer demand and satisfaction in these areas.
-
-### Profitability
-- **Most profitable categories**: When factoring in `total * profit_margin`, categories like *Electronics* and *Home & Lifestyle* emerged as the most profitable, even if they did not always drive the largest sales volume.  
-- **Branch contribution**: Profitability was uneven across stores — some branches generated a disproportionately high share of profit relative to their sales volume, pointing to product mix and customer demographics as drivers.
-
-### Customer Behavior
-- **Ratings**: Average ratings varied across categories and cities, with some product groups consistently achieving higher satisfaction scores (4.5+).  
-- **Shopping patterns**: Analysis of transaction timestamps revealed that most sales occurred in the afternoon and evening, with fewer transactions in the morning.  
-- **Day-of-week trends**: Branch-level analysis showed certain stores peaking on weekends, while others had higher weekday traffic — useful for staff scheduling and promotions.  
-- **Payment preferences by branch**: Branches differed in their most common payment method — some leaned heavily on credit cards, while others showed stronger e-wallet or cash usage.
-
-Together, these findings demonstrate how combining **Python preprocessing** (data cleaning, calculated fields like `total`) with **SQL analysis** (aggregations, CTEs, window functions) can yield actionable insights into Walmart’s operations.
+- Credit cards were the preferred payment method and out-sold other methods in both number of items sold and orders placed.
+- Categories 'Food & Beverages' and 'Health & Beauty' ranked highest in customer ratings at multiple branches, suggesting strong consumer demand and satisfaction in these areas.
+- When factoring in profit margins, categories 'Electronics' and 'Home & Lifestyle' emerged as the most profitable, even though they did not always drive the largest sales volume.
+- Analysis of transaction timestamps revealed that most sales occurred in the afternoon and evening, with fewer transactions in the morning.  
+- Some branches had an unusually large number of orders placed through an e-wallet.
 
 
 ---
