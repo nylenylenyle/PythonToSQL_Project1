@@ -83,7 +83,7 @@ LIMIT 5
 
 ```
 
-## Results and Insights
+## Insights
 
 - Credit cards were the preferred payment method and out-sold other methods in both number of items sold and orders placed.
 - Categories 'Food & Beverages' and 'Health & Beauty' ranked highest in customer ratings at multiple branches, suggesting strong consumer demand and satisfaction in these areas.
