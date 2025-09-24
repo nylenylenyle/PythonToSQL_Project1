@@ -15,10 +15,12 @@ Our goal is to extract critical business insights from Walmart sales data. We wi
    - **Goal**: Create a structured workspace within VS Code and organize project folders for smooth development and data handling.
 
 ```python
+import numpy as np
 import pandas as pd
-df = pd.read_csv("data/sales.csv")
-df["revenue"] = df["qty"] * df["price"]
-df.head()
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+!pip install ipython-sql kaggle sqlalchemy psycopg2
 ```
 
 
