@@ -94,7 +94,7 @@ LIMIT 5
 
 ---
 
-## Tools & Technologies
+## Tools & Libraries
 - **Python**: Pandas, NumPy, Matplotlib, Seaborn  
 - **SQL**: PostgreSQL  
 - **Other**: Kaggle API, SQLAlchemy, ipython-sql, psycopg2  
