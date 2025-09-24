@@ -68,8 +68,68 @@ df.duplicated().sum()
 # 51 duplicates 
 # Could create a datetime column using date and time columns
 ```
+### Data Cleaning (Python)
+```python
+df = df.rename(columns={
+    "Branch": "branch",
+    "City": "city"})
+df.head()
 
+# Could also use df.columns = df. columns.str.lower(), but I prefer specifying which columns to affect and how
+```
+```python
+# Convert unit_price to float
+# df['unit_price'].astype(float) does not work because of the '$'
+# Remove '$', then convert to float
+df['unit_price'].str.replace('$', '').astype(float)
 
+# Replace data with '$' with new float values
+df['unit_price'] = df['unit_price'].str.replace('$', '').astype(float)
+df.info()
+```
+
+```python
+# Drop or replace NULLS
+# Without unit_price and quantity, incomplete records are not useful
+# Drop NULLS
+df.dropna(inplace=True)
+df.isnull().sum()
+```
+
+```python
+# Delete duplicates
+df.drop_duplicates(inplace=True)
+df.duplicated().sum()
+```
+
+```python
+df["date"] = pd.to_datetime(df["date"], format="%d/%m/%y")
+df["time"] = pd.to_datetime(df["time"], format="%H:%M:%S").dt.time
+df.info()
+# I'm unsure if this did anything, since I still had to specify time/date format in later SQL scripts
+# df.info() did show that the date's datatype was datetime64[ns]
+```
+
+```python
+# Save cleaned, analysis-ready dataset
+# This is more of a personal habit; I tend to keep various versions of my datasets 
+df.to_csv("Walmart_Cleaned_Data.csv",index=False)
+
+# Replace dataset with cleaned dataset
+df = pd.read_csv('/Users/nylehamidi/Documents/Research/portfolio_project2/{data_dir}/Walmart_Cleaned_Data.csv', encoding_errors='ignore')
+df.head()
+```
+### Connecting Python and Postgres (Python)
+
+```python
+engine_psql = create_engine("postgresql+psycopg2://postgres:password123@localhost:5432/project2")
+
+try: 
+    engine_psql
+    print("connected")
+except:
+    print('no')
+```
 ### 2. Set Up Kaggle API
    - **API Setup**: Obtain your Kaggle API token from [Kaggle](https://www.kaggle.com/) by navigating to your profile settings and downloading the JSON file.
    - **Configure Kaggle**: 
