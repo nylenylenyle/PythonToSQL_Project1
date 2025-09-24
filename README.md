@@ -27,6 +27,15 @@ import seaborn as sns
 # Database connectors
 import psycopg2
 from sqlalchemy import create_engine
+
+# This creates a hidden holder in home directory
+# Necessary for connecting to Kaggle's API
+!mkdir ~/.kaggle
+
+```
+```python
+# Download from Kaggle
+!kaggle datasets download -d najir0123/walmart-10k-sales-datasets -p {data_dir} --unzip
 ```
 
 
