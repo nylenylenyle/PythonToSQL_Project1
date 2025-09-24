@@ -144,7 +144,7 @@ df.to_sql(name='walmart', con=engine_psql, if_exists='append', index=False)
 ```
 
 ### Data Analysis (SQL)
-
+#### Q.1. How many orders were placed and items sold using each payment method?
 ```sql
 SELECT
 	payment_method,
