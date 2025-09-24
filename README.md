@@ -3,7 +3,7 @@
 ## Project Overview
 This project is an end-to-end data analysis solution designed to demonstrate competency in Python, SQL, and working with APIs.  
 
-The goal is to extract commonly requested business insights from sales data. Python is used for data processing and cleaning, SQL for advanced querying, and the Kaggle API for data acquisition.
+The goal is to extract commonly requested business insights from a dataset hosted on an API. Python is used for data processing and cleaning, SQL for advanced querying, and the Kaggle API for data acquisition.
 
 ### Analysis will aim to address the following questions:
 
