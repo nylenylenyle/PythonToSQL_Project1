@@ -71,6 +71,7 @@ df.duplicated().sum()
 ```
 ### Data Cleaning (Python)
 ```python
+# Make all columns lowercase
 df = df.rename(columns={
     "Branch": "branch",
     "City": "city"})
