@@ -5,7 +5,7 @@ This project is an end-to-end data analysis solution built to demonstrate compet
 
 The goal is to extract business insights from sales data. Python is used for data processing and cleaning, SQL for advanced querying, and the Kaggle API for data acquisition.
 
-##### Analysis will aim to address the following:
+#### Analysis will aim to address the following:
 
 How many orders and items were sold by each payment method?  
 
@@ -28,28 +28,6 @@ How many sales were made in the morning, afternoon, and evening at each store?
 
 Which five branches saw the largest percentage decline in sales?  
 
-
-
-
-Analysis answers:
-Q.1	How many orders were placed and items sold using each payment method?
-
-Q.2	What are the highest rated categories at each Walmart branch?
-
-Q.3	What are the busiest days of the week at each branch?
-
-Q.4	Calculate the quantity of items sold per payment method
-
-Q.5	What are the average, minimum, and maximum rating of each category in each city?
-
-Q.6	What are the total profits for each category?
-
-Q.7	What is the most common payment method at each branch?
-
-Q.8	How many sales were made in the morning, afternoon, and evening?
-
-
-Q.9	Which five branches saw the largest percentage decline in sales?
 
 
 EXAMPLES OF CODE:
