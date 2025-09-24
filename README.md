@@ -1,11 +1,11 @@
 # Python to SQL Data Analysis with API Integration
 
 ## Project Overview
-This project is an end-to-end data analysis solution built to demonstrate competency in Python, SQL, and working with APIs.  
+This project is an end-to-end data analysis solution designed to demonstrate competency in Python, SQL, and working with APIs.  
 
 The goal is to extract business insights from sales data. Python is used for data processing and cleaning, SQL for advanced querying, and the Kaggle API for data acquisition.
 
-### Analysis will aim to address the following:
+### Analysis will aim to address the following questions:
 
 > ###### How many orders and items were sold by each payment method?  
 
@@ -96,15 +96,12 @@ LIMIT 5
 
 ## Project Structure
 ```plaintext
-walmart-sales-analysis/
+PyhthonToSQL_Project2
 ├── README.md                  <- project overview (this file)
-├── requirements.txt           <- Python dependencies
 ├── data/                      <- raw & cleaned datasets
+│   ├── Walmart_Cleaned_Data.csv
+│   └── Walmart.csv
 ├── notebooks/
-│   └── analysis.ipynb         <- full Python data prep & EDA
-├── sql_queries/
-│   └── queries.sql            <- SQL analysis scripts
-└── outputs/
-    ├── Walmart_Cleaned_Data.csv
-    └── charts/
-        └── sales_by_branch.png
+│   └── Project2Notebook.ipynb <- Python data exploration & cleaning with comments
+└── sql_queries/
+    └── Project2Script.sql     <- SQL analysis with comments
