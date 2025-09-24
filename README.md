@@ -143,6 +143,27 @@ except:
 df.to_sql(name='walmart', con=engine_psql, if_exists='append', index=False)
 ```
 
+### Data Analysis (SQL)
+
+```sql
+SELECT
+	payment_method,
+	COUNT(*) AS order_count,
+	SUM(quantity) AS qty_sold
+FROM walmart
+GROUP BY payment_method
+;
+```
+
+
+
+
+
+
+
+
+
+
 ### 2. Set Up Kaggle API
    - **API Setup**: Obtain your Kaggle API token from [Kaggle](https://www.kaggle.com/) by navigating to your profile settings and downloading the JSON file.
    - **Configure Kaggle**: 
