@@ -140,7 +140,6 @@ except:
 ```
 
 ```python
-#
 df.to_sql(name='walmart', con=engine_psql, if_exists='append', index=False)
 ```
 
