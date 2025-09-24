@@ -5,6 +5,7 @@ This project is an **end-to-end data analysis solution** built to demonstrate co
 
 The goal is to extract **critical business insights** from Walmart sales data. Python is used for **data processing and cleaning**, PostgreSQL and SQL for **advanced querying**, and the Kaggle API for **data acquisition**.
 
+Analysis answers:
 Q.1	How many orders were placed and items sold using each payment method?
 
 Q.2	What are the highest rated categories at each Walmart branch?
@@ -24,6 +25,10 @@ Q.8	How many sales were made in the morning, afternoon, and evening?
 
 Q.9	Which five branches saw the largest percentage decline in sales?
 
+
+EXAMPLES OF CODE:
+PYTHON
+SQL
 
 ---
 
