@@ -1,19 +1,27 @@
-# Walmart Data Analysis: End-to-End SQL + Python Project P-9
+End-to-End SQL + Python Project: Walmart
 
 ## Project Overview
 
-![Project Pipeline](https://github.com/najirh/Walmart_SQL_Python/blob/main/walmart_project-piplelines.png)
+This project is an end-to-end data analysis solution designed to demonstrate competency in Python, SQL, and working with APIs. 
 
-
-This project is an end-to-end data analysis solution designed to extract critical business insights from Walmart sales data. We utilize Python for data processing and analysis, SQL for advanced querying, and structured problem-solving techniques to solve key business questions. The project is ideal for data analysts looking to develop skills in data manipulation, SQL querying, and data pipeline creation.
+Our goal is to extract critical business insights from Walmart sales data. We will utilize Python for data processing and analysis and SQL for advanced querying.
 
 ---
 
 ## Project Steps
 
-### 1. Set Up the Environment
-   - **Tools Used**: Visual Studio Code (VS Code), Python, SQL (MySQL and PostgreSQL)
+### 1. Installing Libraries and Configuring Kaggle API (Python)
+   - **Tools Used**: Python, PostgreSQL, DBeaver
    - **Goal**: Create a structured workspace within VS Code and organize project folders for smooth development and data handling.
+
+```python
+import pandas as pd
+df = pd.read_csv("data/sales.csv")
+df["revenue"] = df["qty"] * df["price"]
+df.head()
+```
+
+
 
 ### 2. Set Up Kaggle API
    - **API Setup**: Obtain your Kaggle API token from [Kaggle](https://www.kaggle.com/) by navigating to your profile settings and downloading the JSON file.
