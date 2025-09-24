@@ -21,6 +21,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 !pip install ipython-sql kaggle sqlalchemy psycopg2
+
+import psycopg2
+from sqlalchemy import create_engine
 ```
 
 
