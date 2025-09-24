@@ -8,8 +8,7 @@ Our goal is to extract critical business insights from Walmart sales data. We wi
 
 ---
 
-## Project Steps
-
+## Walkthrough
 ### Installing Libraries and Configuring Kaggle API (Python)
 
 
@@ -37,7 +36,38 @@ from sqlalchemy import create_engine
 # Download from Kaggle
 !kaggle datasets download -d najir0123/walmart-10k-sales-datasets -p {data_dir} --unzip
 ```
+### Data Exploration (Python)
 
+```python
+# Store downloaded dataset to a data frame
+df = pd.read_csv('/Users/nylehamidi/Documents/Research/portfolio_project2/{data_dir}/Walmart.csv', encoding_errors='ignore')
+df.head()
+```
+
+```python
+# Perform gut check 
+# Check that counts are the same across all fields 
+# Check that data types are appropriate 
+df.info()
+```
+
+```python
+# Check for NULLS
+df.isnull().sum()
+```
+
+```python
+# Check for duplicates 
+df.duplicated().sum()
+```
+
+```python
+# City and Branch are unnecessarily capitalized
+# unit_price should be float
+# quantity and unit_price are both missing 31 records
+# 51 duplicates 
+# Could create a datetime column using date and time columns
+```
 
 
 ### 2. Set Up Kaggle API
