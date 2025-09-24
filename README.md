@@ -5,7 +5,7 @@ This project is an end-to-end data analysis solution built to demonstrate compet
 
 The goal is to extract business insights from sales data. Python is used for data processing and cleaning, SQL for advanced querying, and the Kaggle API for data acquisition.
 
-#### Analysis will aim to address the following:
+### Analysis will aim to address the following:
 
 > How many orders and items were sold by each payment method?  
 
